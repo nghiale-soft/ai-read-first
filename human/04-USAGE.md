@@ -4,9 +4,11 @@
 
 1. Add `ai-read-first` under `docs/`.
 2. Create or retain `docs/project/`.
-3. Add a project index and project profile.
-4. Point the AI tool to `START-HERE.md`.
-5. Keep project-specific facts outside `ai-read-first`.
+3. Detect and record the project's primary documentation language.
+4. Add a project index and project profile.
+5. Assign artifact ownership by project role.
+6. Point the AI tool to `START-HERE.md`.
+7. Keep project-specific facts outside `ai-read-first`.
 
 ## New project without project documentation
 
@@ -14,11 +16,13 @@ AI enters Project Bootstrap Mode and:
 
 1. inspects high-signal repository files
 2. detects language, framework, build, tests, and CI
-3. proposes `docs/project/`
-4. populates only verifiable facts
-5. marks unknown business information for confirmation
-6. defines mandatory business verification
-7. offers optional CVE and Sonar initialization
+3. detects the primary documentation language independently from programming languages
+4. proposes artifact-oriented `docs/project/`
+5. assigns PM, PO, BA, SA, Tech Lead, Design, Tester, QA, and Dev ownership
+6. populates only verifiable facts
+7. marks unknown business information for confirmation
+8. defines traceability and mandatory business verification
+9. offers optional CVE and Sonar initialization
 
 ## Expected AI behavior
 

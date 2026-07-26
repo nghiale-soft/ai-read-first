@@ -4,6 +4,24 @@ project:
   languages: []
   frameworks: []
 
+documentation:
+  primary_language: TBD
+  primary_language_evidence: TBD
+  fallback_language: en
+  preserve_identifiers: true
+  glossary: requirements/glossary.md
+
+roles:
+  pm: TBD
+  po: TBD
+  ba: TBD
+  sa: TBD
+  tech_lead: TBD
+  design: TBD
+  tester: TBD
+  qa: TBD
+  dev: AI-assisted
+
 build:
   commands: []
 

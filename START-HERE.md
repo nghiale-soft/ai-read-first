@@ -31,11 +31,13 @@ If it exists:
 If it does not exist, or required files are missing:
 
 1. Read [`bootstrap/PROJECT-BOOTSTRAP.md`](./bootstrap/PROJECT-BOOTSTRAP.md).
-2. Inspect existing README, manifests, build files, CI files, source layout, and tests.
-3. Propose the project documentation structure.
-4. Create only factual skeletons or content supported by repository evidence.
-5. Mark unknown business information as `TBD — user confirmation required`.
-6. Do not invent architecture, business rules, data contracts, or security behavior.
+2. Read [`bootstrap/PROJECT-DOCUMENTATION-STANDARDS.md`](./bootstrap/PROJECT-DOCUMENTATION-STANDARDS.md).
+3. Inspect existing README, manifests, build files, CI files, source layout, tests, and maintained project documentation.
+4. Determine the project's primary documentation language from evidence.
+5. Propose the artifact-oriented project documentation structure and role ownership.
+6. Create only factual skeletons or content supported by repository evidence.
+7. Mark unknown business information as `TBD — user confirmation required`.
+8. Do not invent product intent, requirements, architecture, design, data contracts, or security behavior.
 
 ---
 
@@ -133,7 +135,7 @@ Read in this order:
 1. `docs/project/PROJECT-INDEX.md`
 2. Project rules selected by the index
 3. `docs/project/planning/current-task.md`
-4. Relevant architecture/design/API/data/testing documents
+4. Relevant product, requirements, UX, architecture, engineering, testing, and quality documents
 5. Relevant source files and direct dependencies
 
 Do not read the entire project documentation tree by default.
