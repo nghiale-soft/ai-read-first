@@ -26,4 +26,5 @@ Continue in filename order through the `human/` folder:
 04-USAGE.md
 05-MAINTENANCE.md
 06-FAQ.md
+07-EVIDENCE-AND-BENCHMARKS.md
 ```

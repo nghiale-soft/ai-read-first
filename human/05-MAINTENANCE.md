@@ -43,3 +43,6 @@ When updating this repository:
 - Templates contain no invented project facts.
 - New technology guides include concrete commands and selection rules.
 - Status claims include evidence or are explicitly marked unverified.
+- Performance or token-saving claims follow
+  [`07-EVIDENCE-AND-BENCHMARKS.md`](./07-EVIDENCE-AND-BENCHMARKS.md) and link to
+  sanitized raw evidence.

@@ -15,6 +15,10 @@ Its goals are to:
 
 This repository is documentation-first. It is not a runtime framework, autonomous coding system, CI platform, or code generator.
 
+Measured benefits and the benchmark protocol are documented in
+[`07-EVIDENCE-AND-BENCHMARKS.md`](./07-EVIDENCE-AND-BENCHMARKS.md). The project
+does not claim a token-saving percentage until reproducible evidence is published.
+
 ## Main audiences
 
 ### AI agents
