@@ -3,7 +3,7 @@
 This is the only default entry point for AI agents.
 
 Do not recursively read this repository.
-Do not load `README.md`, `human/`, `integrations/`, `templates/`, or `MAINTAINER-CHECKLIST.md`
+Do not load `README.md`, `human/`, `integrations/`, or `templates/`
 unless the current task explicitly requires them.
 
 Load only files selected by this document.

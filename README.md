@@ -14,6 +14,16 @@ Do not use this README as operational context.
 
 See:
 
-[`human/OVERVIEW.md`](./human/OVERVIEW.md)
+[`human/00-OVERVIEW.md`](./human/00-OVERVIEW.md)
 
-The `human/` folder explains the purpose, installation, philosophy, usage, maintenance, and FAQ.
+Continue in filename order through the `human/` folder:
+
+```text
+00-OVERVIEW.md
+01-PHILOSOPHY.md
+02-QUALITY-MODEL.md
+03-INSTALLATION.md
+04-USAGE.md
+05-MAINTENANCE.md
+06-FAQ.md
+```
