@@ -1,0 +1,11 @@
+---
+description: Mandatory AI documentation entry point
+alwaysApply: true
+---
+
+Before analyzing, planning, editing files, or running commands, read:
+
+@docs/ai-read-first/START-HERE.md
+
+Follow its selective loading sequence exactly.
+Do not skip directly to project documentation or source code.

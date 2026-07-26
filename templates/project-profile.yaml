@@ -1,0 +1,34 @@
+project:
+  name: TBD
+  type: TBD
+  languages: []
+  frameworks: []
+
+build:
+  commands: []
+
+verification:
+  formatter: TBD
+  lint: TBD
+  compile_or_typecheck: TBD
+  unit_test: TBD
+  integration_test: TBD
+  business_verification:
+    required: true
+    type: TBD
+    command: TBD
+
+optional_capabilities:
+  cve_scanning:
+    enabled: false
+    tool: null
+  sonar:
+    enabled: false
+    tool: null
+
+risk:
+  public_api: TBD
+  database: TBD
+  messaging: TBD
+  file_processing: TBD
+  sensitive_data: TBD
