@@ -28,6 +28,8 @@ A task is done only when applicable checks pass.
 - Relevant documentation was updated.
 - No temporary files or unexpected artifacts remain.
 - Unverified items and remaining risks are reported.
+- A material verified change includes an explicit commit suggestion when it
+  remains uncommitted.
 
 ## Documentation-only work
 

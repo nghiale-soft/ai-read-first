@@ -73,6 +73,28 @@ Before describing work as missing or complete:
 4. Do not rewrite historical decisions to match current code; supersede them
    explicitly when required.
 
+## Commit handoff
+
+After a material, coherent change has been verified, and relevant changes remain
+uncommitted, suggest a commit to the user. Include:
+
+- why the change is ready to commit
+- the exact intended file paths to stage
+- a concise commit message
+- copy-ready commands, for example:
+
+```bash
+git add <path-1> <path-2>
+git commit -m "<type>: <concise description>"
+```
+
+Stage only task-owned paths. Do not suggest `git add -A` or `git add .` when the
+worktree contains unrelated changes. If the commit boundary is ambiguous, report
+that ambiguity instead of guessing.
+
+Do not run the commit or push unless the user requested publication or otherwise
+authorized that Git action.
+
 ## Failure budget
 
 After three failed attempts on the same root problem:

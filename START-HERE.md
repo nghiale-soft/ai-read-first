@@ -220,6 +220,10 @@ Business verification:
 Results:
 Not run:
 Remaining risks:
+Commit suggestion:
 ```
 
 Never claim success for a command that was not executed.
+For a material verified change that remains uncommitted, include exact scoped
+`git add` paths and a copy-ready `git commit -m "..."` command. Do not commit or
+push unless authorized.
