@@ -85,8 +85,14 @@ uncommitted, suggest a commit to the user. Include:
 
 ```bash
 git add <path-1> <path-2>
-git commit -m "<type>: <concise description>"
+git commit -m "Feat(<scope>): <concise description>"
 ```
+
+Capitalize the commit type. Use `Feat`, `Fix`, `Docs`, `Refactor`, `Test`,
+`Chore`, `Perf`, `Build`, `CI`, or `Revert`; do not suggest lowercase forms
+such as `feat`, `fix`, or `docs`. Keep the optional scope lowercase and
+repository-specific. If the repository enforces a different commit-message
+format, follow that local rule and state the exception.
 
 Stage only task-owned paths. Do not suggest `git add -A` or `git add .` when the
 worktree contains unrelated changes. If the commit boundary is ambiguous, report

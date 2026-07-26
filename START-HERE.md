@@ -225,5 +225,6 @@ Commit suggestion:
 
 Never claim success for a command that was not executed.
 For a material verified change that remains uncommitted, include exact scoped
-`git add` paths and a copy-ready `git commit -m "..."` command. Do not commit or
-push unless authorized.
+`git add` paths and a copy-ready `git commit -m "..."` command. Capitalize the
+commit type, for example `Feat`, `Fix`, or `Docs`, unless the project defines a
+different local convention. Do not commit or push unless authorized.
