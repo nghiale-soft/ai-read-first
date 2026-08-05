@@ -36,7 +36,7 @@ If it does not exist, or required files are missing:
 4. Determine the project's primary documentation language from evidence.
 5. Propose the artifact-oriented project documentation structure and role ownership.
 6. Create only factual skeletons or content supported by repository evidence.
-7. Mark unknown business information as `TBD — user confirmation required`.
+7. Ask the human directly for unknown business information; record `TBD — awaiting confirmation` only when the human cannot provide the answer (see `bootstrap/PROJECT-BOOTSTRAP.md` first-run completion protocol).
 8. Do not invent product intent, requirements, architecture, design, data contracts, or security behavior.
 
 ---
@@ -48,6 +48,7 @@ Read:
 1. [`core/CORE-RULES.md`](./core/CORE-RULES.md)
 2. [`core/CHANGE-AND-DELETION-SAFETY.md`](./core/CHANGE-AND-DELETION-SAFETY.md)
 3. [`core/CONTEXT-AND-TOKEN-BUDGET.md`](./core/CONTEXT-AND-TOKEN-BUDGET.md)
+4. [`core/GIT-COLLABORATION.md`](./core/GIT-COLLABORATION.md)
 
 ---
 

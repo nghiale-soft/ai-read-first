@@ -7,6 +7,17 @@ Also read:
 1. [`PROJECT-DOCUMENTATION-STANDARDS.md`](./PROJECT-DOCUMENTATION-STANDARDS.md)
 2. [`PROJECT-STRUCTURE-TEMPLATE.md`](./PROJECT-STRUCTURE-TEMPLATE.md)
 
+## First-run completion protocol
+
+On first run, complete the documentation instead of leaving placeholders:
+
+1. Prefer **confirmed values** extracted from repository evidence, config, CI, and maintained docs.
+2. When a value is still unclear and a human is available, **ask the human directly** — one clear question per topic. Do not guess.
+3. Only when the human answers "unknown / not sure" do you record `TBD — awaiting confirmation` (keep a short note of what was asked).
+4. Never invent product intent, requirements, architecture, design, data contracts, or security behavior.
+
+Goal: after the first run, the project profile and index contain as few `TBD` values as possible.
+
 ## Inspect before creating
 
 Inspect only high-signal files first:
