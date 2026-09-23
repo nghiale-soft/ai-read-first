@@ -32,6 +32,18 @@ Before creating a new file, class, component, helper, abstraction, or dependency
 
 Prefer the smallest patch that can be verified. Do not rewrite a whole file to change a small region.
 
+## Comments
+
+Write comments as neutral engineering notes for teammates:
+
+- State what the code does and why. No conversation history, no references to
+  the request, the session, or who asked for what.
+- No AI-agent traces: tool names, "generated with" footers, or phrases that
+  read like a chat transcript ("the user asked", "as requested", "per our
+  discussion").
+- If a decision is pending, use `TODO(<owner>):` with the concrete question
+  instead of narrative text.
+
 ## Generated-code protection
 
 Do not edit generated sources, vendor code, build output, dependency caches, or generated clients directly. Modify the source definition or generator.
