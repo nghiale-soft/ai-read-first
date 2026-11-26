@@ -11,20 +11,6 @@ git status --short
 git diff -- <affected-paths>
 ```
 
-## Nested repositories and submodules
-
-In repositories containing Git submodules, nested repositories, or vendored
-working copies:
-
-1. Inspect status at the parent repository.
-2. Inspect status inside every nested repository in scope.
-3. Confirm the nested repository remote, branch, and expected revision before
-   committing or pushing.
-4. Stage paths explicitly; do not assume a modified submodule pointer describes
-   all nested changes.
-5. Never discard, overwrite, or absorb nested uncommitted work into an unrelated
-   parent commit.
-
 ## Prohibited without explicit approval
 
 ```text
@@ -40,6 +26,10 @@ production deployment
 package publication
 image publication
 ```
+
+Also obtain explicit approval for deletion, architecture changes, public API or
+message contract changes, database migrations, authentication or authorization
+changes, production operations, and dependency-wide upgrades.
 
 ## Deletion gate
 

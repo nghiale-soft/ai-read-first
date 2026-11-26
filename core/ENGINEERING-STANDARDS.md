@@ -4,6 +4,26 @@
 
 Reuse code only when meaning, lifecycle, ownership, and failure behavior match. Do not create a shared abstraction solely because two code fragments look similar.
 
+## Single source of truth
+
+- Keep shared configuration, URLs, limits, status definitions, labels, and
+  localization keys in the project's authoritative source.
+- Do not duplicate mutable business constants across application layers or tests.
+- When changing a shared key or contract, search all consumers and update or
+  explicitly preserve them.
+
+## Impact analysis
+
+When one defect may come from shared logic or a repeated data pattern:
+
+1. Find all call sites, consumers, and affected data shapes.
+2. Define the bounded impact set using repository and runtime evidence.
+3. Fix the shared cause when safe; do not patch only the reported example.
+4. Add regression coverage for the affected class of behavior.
+
+Do not scan or mutate an entire production dataset unless scope, authorization,
+and operational safety justify it.
+
 ## Behavior preservation
 
 For bug fixes and refactors:
@@ -61,6 +81,11 @@ contract explicitly requires it.
 
 Manage lifecycle of streams, files, connections, HTTP responses, threads, executors, and listeners. Stream or chunk large data where feasible.
 
+Long-running commands and jobs must have observable progress, a timeout or
+review interval appropriate to the project, and a cancellation/cleanup path. If
+progress stops, inspect logs and the process state before retrying or changing
+the implementation. Do not impose one universal time limit on every toolchain.
+
 ## Async and transaction behavior
 
 Define:
@@ -79,3 +104,13 @@ Define:
 - Do not log credentials, tokens, secrets, or sensitive payloads.
 - Preserve useful error context.
 - Avoid logging large binary or document bodies.
+
+## Versioning
+
+Use project-defined versioning. When Semantic Versioning applies, use
+`MAJOR.MINOR.PATCH`: major for breaking changes, minor for backward-compatible
+features, and patch for backward-compatible fixes.
+
+Do not silently change the meaning of an existing API, field, event, or stored
+document. A release records its version or tag, behavior changes, migrations,
+breaking changes, and rollback considerations.

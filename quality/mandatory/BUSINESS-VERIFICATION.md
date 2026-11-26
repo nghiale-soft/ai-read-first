@@ -12,6 +12,11 @@ Choose the closest meaningful boundary:
 - file-processing workflow
 - CLI/domain workflow
 
+Use E2E when practical for user-visible, cross-component, upload/download,
+authentication, transaction, or critical API workflows. Otherwise, use an
+executable workflow test across the affected boundaries. An isolated unit test
+is insufficient for cross-layer changes unless the project index explains why.
+
 ## Required properties
 
 The verification must:
@@ -21,6 +26,12 @@ The verification must:
 - include important failure behavior when applicable
 - avoid mocking away the boundary that caused the risk
 - be repeatable in local or CI test environments
+- report [the evidence environment](../../core/VERIFICATION-WORKFLOW.md#evidence-classification)
+
+When content quality is part of the requirement, also assert meaningful
+properties such as non-empty values, expected cardinality, uniqueness,
+referential consistency, or minimum completeness. Do not use fake fallback data
+to hide a missing integration or infrastructure failure.
 
 ## Bootstrap rule
 

@@ -8,6 +8,11 @@ If completing the task would violate a rule or risk user-owned work, stop and re
 
 Do not invent requirements, architecture, schemas, business flows, contracts, defaults, or acceptance criteria.
 
+When missing information requires a human decision, ask one focused question per topic with
+a recommended option and material trade-offs when evidence supports them. Ask
+about product intent and consequential choices, not routine technical work the
+agent can investigate safely.
+
 ## Scope lock
 
 Only change what the task requires. Do not silently:
@@ -84,34 +89,6 @@ Before describing work as missing or complete:
 3. Distinguish fully implemented, partially implemented, planned, and unverified.
 4. Do not rewrite historical decisions to match current code; supersede them
    explicitly when required.
-
-## Commit handoff
-
-After a material, coherent change has been verified, and relevant changes remain
-uncommitted, suggest a commit to the user. Include:
-
-- why the change is ready to commit
-- the exact intended file paths to stage
-- a concise commit message
-- copy-ready commands, for example:
-
-```bash
-git add <path-1> <path-2>
-git commit -m "Feat(<scope>): <concise description>"
-```
-
-Capitalize the commit type. Use `Feat`, `Fix`, `Docs`, `Refactor`, `Test`,
-`Chore`, `Perf`, `Build`, `CI`, or `Revert`; do not suggest lowercase forms
-such as `feat`, `fix`, or `docs`. Keep the optional scope lowercase and
-repository-specific. If the repository enforces a different commit-message
-format, follow that local rule and state the exception.
-
-Stage only task-owned paths. Do not suggest `git add -A` or `git add .` when the
-worktree contains unrelated changes. If the commit boundary is ambiguous, report
-that ambiguity instead of guessing.
-
-Do not run the commit or push unless the user requested publication or otherwise
-authorized that Git action.
 
 ## Failure budget
 
